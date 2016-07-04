@@ -9,30 +9,42 @@ public class ReportCard {
     private String mStudentName;
     private String mSubject;
     private String mGrade;
-    private int mGPA;
+    private String mGPA;
 
 
     //Getter methods
-    public String getmStudentName(){ return mStudentName;}
-    public String getmSubject(){return mSubject;}
-    public String getmGrade(){return mGrade;}
-    public int getmGPA(){return mGPA;}
+    public String getStudentName() {
+        return mStudentName;
+    }
 
-    //Setter methods
-    public void setGrade(String grade, int gpa){
+    public String getSubject() {
+        return mSubject;
+    }
+
+    public String getGrade() {
+        return mGrade;
+    }
+
+    public String getGPA() {
+        return mGPA;
+    }
+
+    //Returns full report
+    public String getFullReport() {
+        return (mStudentName + " " + mSubject + " " + mGrade + " " + mGPA).toString();
+    }
+
+    //Setter method for teacher
+    public void setGrade(String grade, int gpa) {
         mGrade = grade;
-        mGPA = gpa;
+        mGPA = Integer.toString(gpa);
     }
 
 
-    public ReportCard(String studentName, String subject, String grade, int gpa){
+    public ReportCard(String studentName, String subject, String grade, int gpa) {
         mStudentName = studentName;
         mSubject = subject;
         mGrade = grade;
-        mGPA = gpa;
-    }
-
-    public String getFullReport() {
-        return (mStudentName + " " + mSubject + " " + mGrade + " " + mGPA).toString();
+        mGPA = Integer.toString(gpa);
     }
 }

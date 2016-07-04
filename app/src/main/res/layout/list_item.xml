@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="18dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tool:text="Name"
+        android:layout_margin="18dp" />
+
+    <TextView
+        android:id="@+id/Subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tool:text="subject"
+        android:layout_margin="18dp" />
+
+    <TextView
+        android:id="@+id/Grade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tool:text="grade"
+        android:layout_margin="18dp" />
+
+    <TextView
+        android:id="@+id/GPA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tool:text="gpa"
+        android:layout_margin="18dp" />
+
+</LinearLayout>
