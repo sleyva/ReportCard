@@ -30,7 +30,7 @@ public class ReportCard {
     }
 
     //Returns full report
-    public String getFullReport() {
+    public String toString() {
         return (mStudentName + " " + mSubject + " " + mGrade + " " + mGPA).toString();
     }
 
